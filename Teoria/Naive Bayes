@@ -14,25 +14,25 @@ A influencia de cada atributo na classe sao avaliados de forma independente, com
 
 Primeira coisa é preciso calcular a probabilidade condicional da classe
 +-----------+-------------+----------+-------+------+
-| Outlook | Temperature | Humidity | Windy | Play |
+| Outlook  | Temperature | Humidity | Windy | Play |
 +-----------+-------------+----------+-------+------+
-| Sunny | Hot | High | FALSE | No |
-| Sunny | Hot | High | TRUE | No |
-| Overcast | Hot | High | FALSE | Yes |
-| Rainy | Mild | High | FALSE | Yes |
-| Rainy | Cool | Normal | FALSE | Yes |
-| Rainy | Cool | Normal | TRUE | No |
-| Overcast | Cool | Normal | TRUE | Yes |
-| Sunny | Mild | High | FALSE | No |
-| Sunny | Cool | Normal | FALSE | Yes |
-| Rainy | Mild | Normal | FALSE | Yes |
-| Sunny | Mild | Normal | TRUE | Yes |
-| Overcast | Mild | High | TRUE | Yes |
-| Overcast | Hot | Normal | FALSE | Yes |
-| Rainy | Mild | High | TRUE | No |
+| Sunny    | Hot         | High     | FALSE | No   |
+| Sunny    | Hot         | High     | TRUE  | No   |
+| Overcast | Hot         | High     | FALSE | Yes  |
+| Rainy    | Mild        | High     | FALSE | Yes  |
+| Rainy    | Cool        | Normal   | FALSE | Yes  |
+| Rainy    | Cool        | Normal   | TRUE  | No   |
+| Overcast | Cool        | Normal   | TRUE  | Yes  |
+| Sunny    | Mild        | High     | FALSE | No   |
+| Sunny    | Cool        | Normal   | FALSE | Yes  |
+| Rainy    | Mild        | Normal   | FALSE | Yes  |
+| Sunny    | Mild        | Normal   | TRUE  | Yes  |
+| Overcast | Mild        | High     | TRUE  | Yes  |
+| Overcast | Hot         | Normal   | FALSE | Yes  |
+| Rainy    | Mild        | High     | TRUE  | No   |
 +-----------+-------------+----------+-------+------+
 +-----+-----+
-| Yes | No |
+| Yes | No  |
 +-----+-----+
 | 9/14| 5/14|
 | 0.64| 0.35|
@@ -41,25 +41,25 @@ Primeira coisa é preciso calcular a probabilidade condicional da classe
 Calcular os atributos com a classe
 
 +-------------+---------+---------+------+------+
-| | Yes | No | Yes | No |
+| | Yes       | No      | Yes     | No          |
 +-------------+---------+---------+------+------+
-| Outlook | | | | |
-| Sunny | 2/9 | 3/5 | 0.22 | 0.6 |
-| Overcast | 4/9 | 0/5 | 0.44 | 0 |
-| Rainy | 3/9 | 2/5 | 0.33 | 0.4 |
+| Outlook     |         |         |      |      |
+| Sunny       | 2/9     | 3/5     | 0.22 | 0.6  |    
+| Overcast    | 4/9     | 0/5     | 0.44 | 0    |
+| Rainy       | 3/9     | 2/5     | 0.33 | 0.4  |
 +-------------+---------+---------+------+------+
-| Temperature | | | | |
-| Hot | 2/9 | 2/5 | 0.22 | 0.4 |
-| Mild | 4/9 | 2/5 | 0.44 | 0.4 |
-| Cool | 3/9 | 1/5 | 0.33 | 0.2 |
+| Temperature |         |         |      |      |
+| Hot         | 2/9     | 2/5     | 0.22 | 0.4  |
+| Mild        | 4/9     | 2/5     | 0.44 | 0.4  |
+| Cool        | 3/9     | 1/5     | 0.33 | 0.2  |
 +-------------+---------+---------+------+------+
-| Humidity | | | | |
-| High | 3/9 | 4/5 | 0.33 | 0.8 |
-| Normal | 6/9 | 1/5 | 0.66 | 0.2 |
+| Humidity    |         |         |      |      |
+| High        | 3/9     | 4/5     | 0.33 | 0.8  |
+| Normal      | 6/9     | 1/5     | 0.66 | 0.2  |
 +-------------+---------+---------+------+------+
-| Windy | | | | |
-| TRUE | 3/9 | 3/5 | 0.33 | 0.6 |
-| FALSE | 6/9 | 2/5 | 0.66 | 0.4 |
+| Windy       |         |         |      |      |
+| TRUE        | 3/9     | 3/5     | 0.33 | 0.6  |
+| FALSE       | 6/9     | 2/5     | 0.66 | 0.4  |
 +-------------+---------+---------+------+------+
 +-----+-----+
 | Yes | No |
