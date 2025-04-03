@@ -1,0 +1,32 @@
+Condições -> Correlação
+
+Se espera uma correlação moderada ou forte
+
+Coeficiente de Determinacao (R^2) > 0.7 otimo / 0 - 0.3 ruim
+
+Residuais padronizados-> proximos a uma distribuicao normal  
+
+
+
+Regressao linear pode ser Simples e Multipla
+
+Simples -> um,a variavel explanatoria para prever uma variavel dependente Y ~ X 
+
+Multipla -> Duas ou mais variaveis explanatories para prever uma variavel dependente Y~X^1+ X^2 +X^3
+
+
+Analisar cada variavel independente com Y individualmente, gerar graficos de dispersao individuais, buscar redundancias
+
+o R^2 é o percentual de variacao da variavel de resposta que é explicado pelo modelo
+
+Quando se colocam mais de uma variavel no modelo, a tendencia é que o R^2 aumente, mesmo que aa adicao da variavle nao aumente a rpecisao do modelo, neste caso utiliza-se o R^2 ajustado, este ajustado, sempre vai ser menor que R^2.
+
+Colinearidade -> duas variaveis independentes que sao correlacionadas;
+Incluir variaveis -> independentes colinerares pode prejudicar o modelo, criando previsoes nao confiaveis
+Parcimonia -> nao colocar variaveis que nao melhorem o modelo em nada: criar modelos parcimoniosos.
+
+Residuos -> proximos a distribuicao normal, variancia constante em relacao a linha de melhor ajuste, independentes (sem padrao)
+
+
+
+ 

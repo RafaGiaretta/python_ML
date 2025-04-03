@@ -1,0 +1,27 @@
+Categorical Encoding
+
+Algoritmos compreendem apenas números, então, existe o processo de categorical encoding que consiste em transformar categorias em números, no momento de pre processamento dos dados.
+
+Label encoding
+Cada categoria recebe um numero, normalmente em ordem alfabética.
+
+One-hot encoding
+Cada categoria é transformada em outro atributo: dummy variable, um valor binário informa a ocorrência. Problemas de que muitas características, ocasiona uma matriz de muitos valores, muitos dados e muitos zeros.
+
+
+Qual usar?
+Label encoding quando há ordem, grande números de categorias.
+One-hot encoding quando não ha ordem, numero de categorias pequeno.
+
+Dimensionamento de características (Feature scale)
+Quando existe variáveis em escalas diferentes
+
+Padronização Z-score
+Dados aproximados da media (ZERO) e desvio padrão 1, podem ser negativos, não afeta outliers, deve ser usado na maioria dos casos
+
+Normalização (Min-Max) Transforma os dados em escala comum entre zero e 1, usado em processamento de imagens e RNA,
+quando não sabemos a distribuição dos dados, quando precisam ser positivos, algoritmos não requerem dados normais, remove outliers pois impõe "limites".
+
+Dimensionamento de Características Normalizar e padronizar dados numericos
+Nao vai necessariamente melhorar seu modelo, arvores de precisão não precisam de nenhum tipo, não se aplica a atributos categóricos transformados.
+

@@ -1,0 +1,17 @@
+Correlação -> Inclinação -> Interceptação -> Previsão
+
+ Correlação de Pearson 
+
+para inclinicação precisa da correlação (r) e desvio padrão (s)
+
+Interceptação
+b = (media de y - m . media de x)
+m= inclinação
+
+
+Previsão =  P = b + (m * v)
+
+b -> interceptação
+m -> inclinação
+v -> variável independente
+

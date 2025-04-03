@@ -1,0 +1,54 @@
+Conceitos
+
+Cluster/Agrupamentos
+
+Tarefas não supervisionadas, não existe classe e o objetivo é criar grupos a partir de atributos (características) ads instancias.
+
+Aplicações: 
+Dividir clientes em diferentes segmentos, reconhecimento de comunidades em analises de redes sociais, divisão de imagens em diferentes segmentos, dtecção de anomalias em dados..
+
+Tipos
+Agrupamento completo -> cada elemento é adicionado a um único cluster, pode deixar elementos sem agrupar (ruído)
+
+Agrupamento parcial -> cada instancia pode pertencer a mais de um grupo ao mesmo tempo
+
+Modelo difuso ->  cada elemento pertence a um grupo segundo a probabilidade
+
+Modelo hierárquico -> permite que cada grupo tenha subgrupos
+
+K-means -> algoritmo mais popular de agrupamento, simples, baseado em protótipo, encontra um numero de grupos definido pelo usuário, agrupa todos os objetos, definir os centroides é uma etapa fundamental, distancia euclidiana.
+
+Diferença entre K-means e K-medoid -> k-means o prototipo é um centroide ( media de grupo de pontos ), quase nunca é um ponto real de dados. K-medoid é baseado em medoide (ponto mais representativo), é um ponto real de dados.
+
+DBSCAN -> baseado em densidade, menos afetado por ruido, numero de grupos definidos automaticamente e pontos de baixa densidade sao definidos com ruido e nao agrupados, densidade baseada no raio especificado.
+
+Hierárquico -> Aglomerativo (Comeca com pontos em grupos individuais e a cada etapa funde os pares mais proximos. Requer uma novcao de proximidade, mais comuns.
+	    -> Divisiva  ( Comeca incluindo todos, e a cada etapa divide ate que reste apenas grupos unicos.
+
+
+	Regras de associação
+Buscar relação entre itens
+
+Conceitos
+Suporte -> numero de transacao que contem todos os itens da transacao
+Confiança -> infica a proporcao de vezes que, uma transacao contendo o elemento A tambem tem B
+Forca da regra (lift) -> mostra se a associacao entre os itens é positiva ou negativa 
+
+
+Suporte -> ajuda a entender a frequencia que esses dois itens se encontram juntos.
+
+Suporte (A) -> Numero de transacoes contendo A / Total de transacoes
+Suporte (A,B) -> Numero de transacoes contendo A e B / Total de transações
+
+Confianca -> busca a probabilidade de que havendo item A tambem havera o item B
+Confianca (A->B) = Suporte (A,B) / Suporte(A) 
+
+Lift -> Indica a forca de uma regra de associação
+
+Lift = 1 -> Indica que A e B sao independentes, ou seja, a presença de A nao afeta a probabilidade de B ser comprado
+Lift > 1 -> Indica uma ssociação positiva entre A e B, ou seja, a presenca de a aumenta a probabilidade de B ser comprado
+Lift < 1 -> Indica uma associacao negativa entre A e B, ou seja, a presenca de A diminui a probabilidade de B ser comprado
+
+Lift(A->B) -> Confiança(A->B)/ Suporte(B)
+
+
