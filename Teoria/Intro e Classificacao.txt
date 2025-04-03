@@ -1,0 +1,60 @@
+Treino -> Algoritmo processa dados e cria modelo
+
+Validação -> Dados são usados para ajustar o modelo 
+
+Teste -> Dados são usados para avaliar a performance do modelo
+
+
+
+Como dividir os dados - > Técnica mais comum Hold-Out
+
+Divide os dados em Treino(Porcao maior 65-70% +-) e Teste(35-30%)
+Porção de treino vai para o algoritmo de classificação, que processa, aprende e cria o MODELO.
+Porcao de teste vai ser submetido no modelo para ter uma nova previsão, e posteriormente avaliação do desempenho deste modelo com o teste.
+
+Depois de um modelo satisfatório (com melhor performasse possível) -> lança para produção
+
+
+Técnica de validação cruzada
+
+Divide os dados em vários conjuntos menores, ao invés de um maior de treino de 70% por ex, se cria 9 conjuntos de 10% e utilizamos os 10 % restantes para teste, depois, se troca os dados de teste com um de treino, e na fase de classificação, e segue o mesmo fluxo da outra técnica, teste do modelo, previsão e avaliação de desempenho.
+
+Técnica Leave-One-Out
+Mesmo principio da tecnica de validação cruzada, mas voce treina todos os conjuntos de dados, menos um.
+
+Técnica K-Fold
+Um tipo de validação cruzada, onde K vai ser definida pelo programador e vai ser treinado em K-1 subconjuntos de dados.
+
+Técnica de Subamostragem
+Envolve a seleção de uma amostra aleatória de exemplos do conjunto de dados original para treinamento do modelo.
+
+
+O ideal é ter modelos genéricos.
+
+Super Ajustes -> Funciona bem com dados de treino, mas ao colocar em produção, os resultados ao muito abaixo  do testado. Assim, ocorreu um super ajuste no modelo com os dados de treino.
+
+Sub Ajuste -> Contrario, modelo não consegue capturar as caracteristicas o problema, entao nao captura um problema generic. Pode ser causados por modelos muito simples, conjunto de dados pequenos, selecao inadequada de atributos e falta de ajustes de hiperparametros.
+
+METRICAS -> capacidade de medir e comparar o aprendizado do modelo
+Para classificação Acurácia -> quantidade total de acertos (VP + VN) / (VP + VN + FP + FN )
+		   Precisão -> proporção de instancias verdadeiramente positivas entre as instancias previstas como positivas -> VP /(VP+FP) ( BUSCA QUALIDADE DAS PREVISOES POSITIVAS DO MODELO )
+		   Recall / sensibilidade -> proporção de instancias classificadas como positivas em relação as instancias positivas reais -> VP/(VP+FN) ( CAPACIDADE DO MODELO DE IDENTIFICAR CORRETAMENTE OS CASOS POSITIVOS)
+		   Especificidade -> proporçao de instancias engativas erdadeiras das instancias negativas reais. VN / (VN + FP) 
+		   F1 Score -> média harmonica de precisa e recall
+	Grafico ROC -> Mostra o balance entre os verdadeiros positivos e falsos positivos 
+	
+		   
+Mean Erro (ME)
+Depende da escala,  a média da diferenca entre realizado e previsto.
+
+Mean Absolute Errors ( MAE )
+Depende da escala, a média da diferenca absoluta entre o realizado e o previsto ( se faz o calculo em modulo, sem perigo de que os resultados e anulem )
+
+Root Mean Squared Error (RMSE)
+Independe da escala, é o desvio padrao da amostra da diferenca entre o previsto e o teste. (Menor valor é  a melhor metrica)
+
+Mean Percentage Error ( MPE)
+Independe de escala (%), diferenca percentual de erro
+
+
+
