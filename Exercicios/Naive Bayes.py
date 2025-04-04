@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from yellowbrick.classifier import ConfusionMatrix # Para gerar visualmente uma matriz de confusao
 
 
-base = pd.read_csv('C:\\Users\\rafae\\OneDrive\\Ambiente de Trabalho\\ML e IA\\Exercicios\\Arquivos_Utilizados\\insurance.csv')
+base = pd.read_csv('\\Exercicios\\Arquivos_Utilizados\\insurance.csv')
 base= base.dropna() # Removendo os campos NaN
 base = base.drop(columns=['Unnamed: 0'])
 print(base)
