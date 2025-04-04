@@ -9,7 +9,7 @@ import scipy.stats as stats # Biblioteca focada em calculos cientificos e estat�
 import seaborn as sns # Biblioteca baseada no Matplotlib, mas com graficos mais bonitos..
 
 # Ler o arquivo
-base = pd.read_csv('C:\\Users\\rafae\\OneDrive\\Ambiente de Trabalho\\ML e IA\\Exercicios\\Arquivos_Utilizados\\mt_cars.csv') # Base vai ser a variavel que le o arquivo, pd.read_csv é a funcao do pandas para ler arquivos csv com endereco como parametro
+base = pd.read_csv('Exercicios\RL com StatsModels.py') # Base vai ser a variavel que le o arquivo, pd.read_csv é a funcao do pandas para ler arquivos csv com endereco como parametro
 print(base.shape) # para verificar linhas e colunas do arquivo
 base = base.drop(['Unnamed: 0'], axis=1) # Removemos a coluna de nomes para nao ter que ficar tratando o que nao é numero
 # print(base.head()) # possibilita visualiar em tabela o arquivo
