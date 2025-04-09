@@ -1,0 +1,15 @@
+Arvore de decisao
+
+Parte de um nó inicial, chamado nó raiz.
+
+Particoes ( divisoes ), onde o algaritmo intende que é necessario divisao dos atributos 
+Nós Folhas, que sao os que se encontram na extremidade da arvore
+
+Ela funciona como um grafo direcionado, sem ciclo
+
+A vantagem de uma arvore é por ser intuitiva para qualquer pessoa.
+
+Com os mesmos dados pode ser geradas diferentes arvores de decisao. 
+Podem ser avaliadas de acordo com sua complexidade ( profundidade e largura)
+
+Objetivo é fazer modelos de ML menos complexo possivel, quanto mais simples mais leve e menor o custo
